@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+
+}
+
+body{
+    background: #CAD6FF;
+
+}
+
+nav{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: white;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: o 20px 35px rgba(0, 0, 0, 0.1);
+
+}
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+
+a{
+    position: relative;
+    color: rgb(83,83,83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.bx{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-bar{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+
+}
+
+a:hover{
+    background: #eee;
+}
+
+nav:hover{
+    width: 280px;
+    transition: all 0.5s ease;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.CONTAINER-TODO {
+    margin: 10px auto;
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+ 
+    margin-top: 50px;
+  }
+  
+  .todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 0 auto 20px;
+    padding: 50px 70px 70px;
+    border-radius: 10px;
+    
+  }
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;  
+}
+
+input{
+    flex : 1;
+    border:none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+
+}
+
+button{
+    border:none;
+    outline: none;
+    padding: 16px 50px;
+    background: #00155B; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: #2140AA;
+}
+
+.CONTAINER-TODO ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.CONTAINER-TODO ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 5;
+    background-image: url(Images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left: 8px;
+
+}
+
+.CONTAINER-TODO ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+
+
+
+}
+
+
+
+.CONTAINER-TODO ul li.checked::before{
+    background-image: url(Images/ok-64.png);
+    
+}
+
+.CONTAINER-TODO ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size:22px;
+    color: #555;
+    text-align: center;
+    border-radius: 50% ;
+}
+
+.CONTAINER-TODO ul li span:hover{
+    background: #edeef0;
+    width: 35px;
+    height: 35px;
+}
+
+
+
+
